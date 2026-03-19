@@ -181,7 +181,7 @@ const Navbar = () => {
             </div>
 
 
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" to="/hire">
               Hire Developers
             </Link>
 
