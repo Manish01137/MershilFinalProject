@@ -4,6 +4,7 @@ import Footer from "../components/common/Footer";
 import HeroHire from "../components/hire/HeroHire";
 import RolesGrid from "../components/hire/RolesGrid"; // 👈 ADD THIS
 import ProcessSection from "../components/hire/ProcessSection";
+import CTASection from "../components/hire/CTASection";
 
 const Hire = () => {
   return (
@@ -25,6 +26,7 @@ const Hire = () => {
         {/* <ProcessSection /> */}
         <ProcessSection/>
         {/* <CTASection /> */}
+        <CTASection/>
 
       </main>
 
