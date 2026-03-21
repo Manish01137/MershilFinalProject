@@ -8,14 +8,14 @@ const ServiceTech = ({ data }) => {
     const ctx = gsap.context(() => {
       gsap.from(".tech-title", {
         y: 60,
-        opacity: 0,
+        // opacity: 0,
         duration: 1,
         ease: "power3.out",
       });
 
       gsap.from(".tech-item", {
         y: 60,
-        opacity: 0,
+        // opacity: 0,
         duration: 0.6,
         stagger: 0.1,
         delay: 0.3,

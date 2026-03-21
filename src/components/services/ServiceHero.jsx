@@ -28,8 +28,15 @@ const ServiceHero = ({ data }) => {
   return (
     <section
       ref={ref}
-      className="w-full min-h-screen flex items-center bg-[#050816] text-white px-6 md:px-20 py-20"
+      className="relative w-full min-h-screen flex items-center text-white px-6 md:px-20 py-20 overflow-hidden"
     >
+      {/* 🔥 DARK BLUE GRADIENT BACKGROUND */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#020617] via-[#050816] to-[#0a0f2c]" />
+
+      {/* ✨ subtle glow effects */}
+      <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-blue-600/20 rounded-full blur-[120px] -z-10"></div>
+      <div className="absolute bottom-[-120px] right-[-100px] w-[400px] h-[400px] bg-purple-600/20 rounded-full blur-[120px] -z-10"></div>
+
       <div className="grid md:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto">
         
         {/* LEFT CONTENT */}
@@ -61,7 +68,7 @@ const ServiceHero = ({ data }) => {
           <img
             src={data.heroImage}
             alt={data.title}
-            className="rounded-2xl shadow-2xl w-full object-cover"
+            className="rounded-2xl shadow-2xl w-full object-cover relative z-10"
           />
 
           {/* glow effect */}
